@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study for House Dancers: a dual-purpose website combining dance class information and a branded merch shop.">
+  <title>House Dancers · Dariia Paradzinska</title>
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dariiaparadzinska.com/projects/housedance.html">
+  <meta property="og:title" content="House Dancers · Dariia Paradzinska">
+  <meta property="og:description" content="End-to-end UX, UI and no-code build for a dance school combining class info and a branded merch shop. 914 visitors, zero paid ads.">
+  <meta property="og:image" content="https://dariiaparadzinska.com/assets/images/housedance-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="House Dancers · Dariia Paradzinska">
+  <meta name="twitter:description" content="End-to-end UX, UI and no-code build for a dance school combining class info and a branded merch shop. 914 visitors, zero paid ads.">
+  <meta name="twitter:image" content="https://dariiaparadzinska.com/assets/images/housedance-cover.png">
+  <link rel="preload" href="../assets/fonts/DMSans-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="../assets/fonts/DMSerifDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <div class="nav-shell">
+    <nav>
+      <a href="../index.html" class="nav-name">Dariia Paradzinska</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a href="../assets/Dariia_Paradzinska_CV.pdf" class="nav-cv" download>CV ↓</a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu" aria-hidden="true">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="cs-hero">
+      <a class="cs-back" href="../index.html#work">← Back to work</a>
+      <div class="cs-tags">
+        <span class="cs-tag">Client project</span>
+        <span class="cs-tag">UX &amp; UI design</span>
+        <span class="cs-tag">E-commerce</span>
+        <span class="cs-tag">No-code build</span>
+        <span class="cs-read-time">4 min read</span>
+      </div>
+      <h1>House Dancers: a dance school and a merch shop, one website</h1>
+      <p class="cs-subtitle">End-to-end UX, UI design and build for a house dance school that needed to serve two distinct purposes at once: helping visitors find and book classes, and selling branded merchandise. <span style="opacity:0.6; font-size:0.9em;">(Site is in Ukrainian. The client's audience is Ukrainian-speaking.)</span></p>
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <span class="cs-metric-val">914</span>
+        <span class="cs-metric-lab">Unique visitors, zero paid ads</span>
+      </div>
+      <div class="cs-metric">
+        <span class="cs-metric-val">13</span>
+        <span class="cs-metric-lab">Class signups · 1.18% conversion</span>
+      </div>
+      <div class="cs-metric">
+        <span class="cs-metric-val">End-to-end</span>
+        <span class="cs-metric-lab">UX, UI design and no-code build</span>
+      </div>
+    </div>
+
+    <div class="cs-progress">
+      <div class="cs-progress-dot active" data-target="cs-challenge" data-label="The challenge"></div>
+      <div class="cs-progress-dot" data-target="cs-ia" data-label="Structure"></div>
+      <div class="cs-progress-dot" data-target="cs-decisions" data-label="Design decisions"></div>
+      <div class="cs-progress-dot" data-target="cs-build" data-label="Build"></div>
+      <div class="cs-progress-dot" data-target="cs-outcome" data-label="Outcome"></div>
+    </div>
+
+    <div class="cs-body">
+
+      <p id="cs-challenge" class="cs-section-label">The challenge</p>
+      <p>The client ran a house and hip-hop dance school and wanted a website that did two distinct things: attract new students with class information and schedules, and sell branded merchandise to the existing dance community. These are not the same user goal, and combining them in a single site without confusing visitors was the central design problem.</p>
+
+      <div class="callout">
+        <p>The core navigation challenge: a visitor who arrives looking for class times should find them immediately, without the shop pulling them off course. And someone browsing merch shouldn't have to wade through schedules to find what they want. Two journeys, one front door.</p>
+      </div>
+
+      <p>The school also had strong visual content (performance photos, dance battles, teacher profiles) which needed to be showcased without turning the site into a media gallery at the expense of the practical information people came for.</p>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/housedance-cover.png" alt="House Dancers website homepage showing hero section with dance imagery" loading="lazy">
+        <figcaption>Homepage hero: bold imagery conveys the energy of the school before the visitor reads a word</figcaption>
+      </figure>
+
+      <hr class="cs-divider">
+
+      <p class="cs-section-label">My role</p>
+      <div class="cs-two-col">
+        <div class="cs-mini">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Defining site structure and content hierarchy</li>
+            <li>Planning user flows for class discovery and merch browsing</li>
+            <li>UI design for all key screens, desktop and mobile</li>
+            <li>Visual style direction: palette, typography, layout</li>
+            <li>Building and launching the site using Tilda</li>
+            <li>Responsive implementation across devices</li>
+          </ul>
+        </div>
+        <div class="cs-mini">
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma: design and prototyping</li>
+            <li>Tilda: no-code build with custom modifications</li>
+            <li>Google Analytics: post-launch traffic tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="cs-divider">
+
+      <p id="cs-ia" class="cs-section-label">Information architecture</p>
+      <h2>Separating two journeys before touching the UI</h2>
+      <p>Before designing a single screen, I mapped the full site structure. The dual-purpose nature of the site meant getting the information architecture right was more important than usual: the navigation had to make both paths immediately legible from the homepage.</p>
+
+      <div class="ia-wrap">
+        <div class="ia-header">
+          <span class="ia-header-title">Full site structure</span>
+          <span class="ia-header-count">5 pages</span>
+        </div>
+        <div class="ia-grid">
+          <div class="ia-card">
+            <div class="ia-card-label">Home</div>
+            <ul class="ia-card-items ia-card-items--2col">
+              <li>Hero + CTA</li>
+              <li>Dance styles</li>
+              <li>Photo and video<span>Links to gallery page</span></li>
+              <li>Teachers</li>
+              <li>Merch preview</li>
+              <li>Instagram feed</li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-label">Schedule</div>
+            <ul class="ia-card-items">
+              <li>Class timetable<span>Signup pop-up on click</span></li>
+              <li>Pricing tiers</li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-label">Gallery</div>
+            <ul class="ia-card-items">
+              <li>Video gallery</li>
+              <li>Photo gallery</li>
+              <li>CTA</li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-label">Merch shop</div>
+            <ul class="ia-card-items">
+              <li>"House is love" screen</li>
+              <li>Product catalogue<span>Filters + individual product cards</span></li>
+            </ul>
+          </div>
+          <div class="ia-card">
+            <div class="ia-card-label">Contacts</div>
+            <ul class="ia-card-items">
+              <li>Contact + signup form</li>
+              <li>Map with address</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p>The six pages broke down into two clear groups. Informational pages served prospective students: home, schedules and prices, gallery, news. Transactional pages served the existing community: the merch shop and contacts. The navigation was structured to reflect this split without labelling it explicitly, and visitors naturally gravitated toward whichever path matched their intent.</p>
+
+      <div class="cs-two-col">
+        <div class="cs-mini">
+          <h4>Prospective students</h4>
+          <ul>
+            <li>Home: overview and CTAs to both paths</li>
+            <li>Schedules and prices: class times, levels, costs upfront</li>
+            <li>Gallery: photos and videos of performances and battles</li>
+            <li>News: community events and opportunities</li>
+          </ul>
+        </div>
+        <div class="cs-mini">
+          <h4>Dance community</h4>
+          <ul>
+            <li>Merch shop: branded clothing and accessories for dancers</li>
+            <li>Contacts: social links, direct contact, lead capture form</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="cs-divider">
+
+      <p id="cs-decisions" class="cs-section-label">Design decisions</p>
+      <p>The visual style needed to feel energetic and alive without sacrificing clarity, particularly on the pages where people needed to find and act on practical information.</p>
+
+      <div class="decision-block">
+        <span class="dec-num">01</span>
+        <div class="dec-content">
+          <h4>Large hero imagery to set the tone immediately</h4>
+          <p>The homepage opens with a full-width photo of the school in action. Dance is a visual, physical thing, and visitors should feel the energy before they start reading. This also means the practical content (schedules, shop) arrives with context already established rather than having to work against a blank page.</p>
+        </div>
+      </div>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/housedance-styles.png" alt="House Dancers visual style guide showing colour palette and typography" loading="lazy">
+        <figcaption>Visual identity: dark palette with bold accents, clean typography, energetic but readable</figcaption>
+      </figure>
+
+      <div class="decision-block">
+        <span class="dec-num">02</span>
+        <div class="dec-content">
+          <h4>Schedules and prices as a dedicated page, not buried in content</h4>
+          <p>For a dance school, schedule and pricing information is the most asked-for content. Rather than embedding it in a long homepage, it lives on its own page accessible directly from the main navigation. Visitors looking to sign up don't have to scroll through the gallery or past the shop to find what matters most to them.</p>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <span class="dec-num">03</span>
+        <div class="dec-content">
+          <h4>Teacher profiles as trust anchors</h4>
+          <p>Before committing to a class, people want to know who is teaching. The teacher section puts faces and backgrounds in front of prospective students early, answering the credibility question that most dance school websites leave until too late. Two teachers, two profiles: straightforward and personal.</p>
+        </div>
+      </div>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/housedance-full.png" alt="House Dancers full page layout showing the teacher section" loading="lazy">
+        <figcaption>Page layout: clear section breaks keep class content and community content visually distinct</figcaption>
+      </figure>
+
+      <div class="decision-block">
+        <span class="dec-num">04</span>
+        <div class="dec-content">
+          <h4>Merch shop with its own visual lane</h4>
+          <p>The shop section uses product-focused cards consistent with e-commerce conventions: clean background, product image prominent, price and CTA visible. This is a deliberate shift in visual language from the rest of the site, which signals to users that they have moved into a transactional space and can behave accordingly.</p>
+        </div>
+      </div>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/housedance-ui.png" alt="House Dancers UI components and screen designs" loading="lazy">
+        <figcaption>UI components: consistent button styles, card patterns and navigation across both informational and transactional sections</figcaption>
+      </figure>
+
+      <hr class="cs-divider">
+
+      <p id="cs-build" class="cs-section-label">Build</p>
+      <p>Built using Tilda with custom code modifications to extend default functionality. The visual style required several overrides to achieve the dark palette and bold layout decisions that Tilda's standard blocks don't support out of the box. Fully responsive across mobile and desktop.</p>
+
+      <div class="callout">
+        <p>The teacher section and gallery required custom block configurations: the visual content was the heart of the school's identity, and standard grids didn't do it justice.</p>
+      </div>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/housedance-screens.png" alt="House Dancers multiple pages shown side by side" loading="lazy">
+        <figcaption>Multiple pages delivered: homepage, schedules, gallery and merch shop, all consistent in visual language</figcaption>
+      </figure>
+
+      <hr class="cs-divider">
+
+      <div id="cs-outcome" class="result-block">
+        <h3>Outcome</h3>
+        <div class="result-grid">
+          <div>
+            <span class="rg-val">914</span>
+            <span class="rg-lab">Unique visitors with no paid advertising</span>
+          </div>
+          <div>
+            <span class="rg-val">13</span>
+            <span class="rg-lab">Signups · 1.18% conversion rate</span>
+          </div>
+          <div>
+            <span class="rg-val">32%</span>
+            <span class="rg-lab">Of traffic from social media</span>
+          </div>
+        </div>
+        <p>The site attracted 914 unique visitors over its active period with no paid advertising, with traffic coming from direct (35%), social media (32%) and internal navigation (32%). 13 class signups were recorded at a 1.18% conversion rate. The dual-purpose structure worked: visitors could move between class information and the merch shop without friction, and the signup flow converted a meaningful share of the organic audience the school already had.</p>
+      </div>
+
+      <div class="reflection-block">
+        <h4>What I'd do differently</h4>
+        <p>With more time I'd have run usability tests specifically around the class-to-shop transition: whether users understood they were in a different part of the site, and whether the navigation labels communicated the split clearly enough. I'd also have pushed for a search or filter on the merch page: once the product range grows, a flat grid becomes harder to browse. And I'd have set up Google Analytics event tracking on the class enquiry form from day one to understand which pages were actually driving sign-ups.</p>
+      </div>
+
+    </div>
+
+    <div class="page-wrap">
+      <div class="section-header">
+        <span class="section-num">Next</span>
+        <h2>Other case studies</h2>
+      </div>
+      <div class="project-nav-grid">
+        <a class="project-nav-card" href="./cozymakeovers.html"><h3>CozyMakeovers</h3><p>Brand, UX and live website for a renovation business.</p></a>
+        <a class="project-nav-card" href="./edison.html"><h3>Edison IT school</h3><p>Conversion-focused EdTech website designed for parent signups.</p></a>
+        <a class="project-nav-card" href="./weather.html"><h3>Met Office weather app</h3><p>A weather dashboard using the Met Office API. Complex data, simplified.</p></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Dariia Paradzinska · Product and UI/UX Designer · London · 2026</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/dariia-paradzinska/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../script.js"></script>
+  <script>
+    const dots = document.querySelectorAll('.cs-progress-dot');
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const target = document.getElementById(dot.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const updateProgress = () => {
+      const scrollY = window.scrollY + window.innerHeight * 0.35;
+      let active = 0;
+      dots.forEach((dot, i) => {
+        const target = document.getElementById(dot.dataset.target);
+        if (target && target.getBoundingClientRect().top + window.scrollY <= scrollY) {
+          active = i;
+        }
+      });
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === active));
+    };
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>

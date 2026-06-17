@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study for Edison IT school: a conversion-focused EdTech website designed to support trial lesson signups."
+    />
+    <title>Edison IT school for children · Dariia Paradzinska</title>
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://dariiaparadzinska.com/projects/edison.html"
+    />
+    <meta property="og:title" content="Edison IT school · Dariia Paradzinska" />
+    <meta
+      property="og:description"
+      content="Conversion-focused EdTech website for a coding school for children. Designed to turn paid ad traffic into trial lesson signups."
+    />
+    <meta
+      property="og:image"
+      content="https://dariiaparadzinska.com/assets/images/edison-cover.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Edison IT school · Dariia Paradzinska"
+    />
+    <meta
+      name="twitter:description"
+      content="Conversion-focused EdTech website for a coding school for children. Designed to turn paid ad traffic into trial lesson signups."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dariiaparadzinska.com/assets/images/edison-cover.png"
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/DMSans-Variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/DMSerifDisplay-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="nav-shell">
+      <nav>
+        <a href="../index.html" class="nav-name">Dariia Paradzinska</a>
+        <ul class="nav-links">
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <a href="../assets/Dariia_Paradzinska_CV.pdf" class="nav-cv" download
+          >CV ↓</a
+        >
+        <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="nav-mobile-menu" aria-hidden="true">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+        <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="cs-hero">
+        <a class="cs-back" href="../index.html#work">← Back to work</a>
+        <div class="cs-tags">
+          <span class="cs-tag">Client project</span>
+          <span class="cs-tag">EdTech</span>
+          <span class="cs-tag">Conversion design</span>
+          <span class="cs-tag">User journey</span>
+          <span class="cs-read-time">5 min read</span>
+        </div>
+        <h1>
+          Edison IT school: designing a website that converts parents into trial
+          lesson bookings
+        </h1>
+        <p class="cs-subtitle">
+          End-to-end design and build for an EdTech startup offering coding
+          courses for children aged 9 to 16. Designed to convert paid social
+          traffic into trial lesson signups.
+          <span style="opacity: 0.6; font-size: 0.9em"
+            >(Site is in Ukrainian. The client's audience is
+            Ukrainian-speaking.)</span
+          >
+        </p>
+      </div>
+
+      <div class="cs-metrics">
+        <div class="cs-metric">
+          <span class="cs-metric-val">9.6%</span>
+          <span class="cs-metric-lab">Lead conversion rate</span>
+        </div>
+        <div class="cs-metric">
+          <span class="cs-metric-val">778</span>
+          <span class="cs-metric-lab">Trial lesson leads generated</span>
+        </div>
+        <div class="cs-metric">
+          <span class="cs-metric-val">8,100</span>
+          <span class="cs-metric-lab">Sessions over campaign period</span>
+        </div>
+      </div>
+
+      <div class="cs-progress">
+        <div
+          class="cs-progress-dot active"
+          data-target="cs-challenge"
+          data-label="The challenge"
+        ></div>
+        <div
+          class="cs-progress-dot"
+          data-target="cs-users"
+          data-label="Users"
+        ></div>
+        <div
+          class="cs-progress-dot"
+          data-target="cs-journey"
+          data-label="User journey"
+        ></div>
+        <div
+          class="cs-progress-dot"
+          data-target="cs-decisions"
+          data-label="Design decisions"
+        ></div>
+        <div
+          class="cs-progress-dot"
+          data-target="cs-build"
+          data-label="Build"
+        ></div>
+        <div
+          class="cs-progress-dot"
+          data-target="cs-outcome"
+          data-label="Outcome"
+        ></div>
+      </div>
+
+      <div class="cs-body">
+        <p id="cs-challenge" class="cs-section-label">The challenge</p>
+        <p>
+          Edison was a small EdTech business offering programming courses for
+          children in Ukraine. The school had a product and a teacher, but no
+          website and no way to convert interested parents into bookings. All
+          enquiries came through word-of-mouth and social media, with no
+          scalable acquisition channel.
+        </p>
+        <div class="callout">
+          <p>
+            The primary goal was specific: convert website visitors into free
+            trial lesson signups. Not just inform. Convert. That single
+            objective shaped every design decision on the page.
+          </p>
+        </div>
+        <p>
+          The site needed to speak to two audiences simultaneously: children,
+          who needed to feel excited about learning to code, and their parents,
+          who needed to feel confident the school was safe, structured, and
+          worth their time.
+        </p>
+
+        <figure class="case-study-image">
+          <img
+            src="../assets/images/edison-main.png"
+            loading="lazy"
+            alt="Edison IT school full homepage overview"
+          />
+          <figcaption>
+            Full homepage: warm palette, real teacher photography, age-grouped
+            course layout
+          </figcaption>
+        </figure>
+
+        <hr class="cs-divider" />
+
+        <p class="cs-section-label">My role</p>
+        <div class="cs-two-col">
+          <div class="cs-mini">
+            <h4>Responsibilities</h4>
+            <ul>
+              <li>UX and UI design and layout structure</li>
+              <li>Visual identity direction: palette, styles, accents</li>
+              <li>Designing the user journey from landing to registration</li>
+              <li>Building and launching the website using no-code tools</li>
+              <li>Responsive design for mobile users</li>
+            </ul>
+          </div>
+          <div class="cs-mini">
+            <h4>Tools</h4>
+            <ul>
+              <li>Figma: design and prototyping</li>
+              <li>Tilda: no-code build with custom code modifications</li>
+              <li>Google Analytics: traffic and conversion tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="cs-divider" />
+
+        <p id="cs-users" class="cs-section-label">Users and their needs</p>
+        <div class="cs-two-col">
+          <div class="cs-mini">
+            <h4>Parents (primary decision makers)</h4>
+            <ul>
+              <li>Is this school credible and trustworthy?</li>
+              <li>What will my child actually learn?</li>
+              <li>Is it suitable for their age and level?</li>
+              <li>How do I sign them up without friction?</li>
+            </ul>
+          </div>
+          <div class="cs-mini">
+            <h4>Children (influencers of the decision)</h4>
+            <ul>
+              <li>Does this look fun and interesting?</li>
+              <li>Will I learn things that feel relevant?</li>
+              <li>Does it feel like school, or something different?</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="cs-divider" />
+
+        <p id="cs-journey" class="cs-section-label">User journey</p>
+        <h2>How parents move from ad click to trial booking</h2>
+        <p>
+          The site was used as a paid ad landing page, so every visitor arrived
+          with intent, but intent alone doesn't convert. Mapping the journey
+          helped identify where design needed to do the most work.
+        </p>
+
+        <div class="flow-compact">
+          <div class="flow-legend">
+            <span class="flow-legend-pos">Visitor path</span>
+            <span class="flow-legend-neg">Exit / drop-off</span>
+          </div>
+
+          <div class="flow-node">
+            <div class="flow-node-main">
+              <span class="flow-node-tag">Entry point</span>
+              <h4>Paid ad — Google or Facebook</h4>
+              <p>
+                Parent sees ad targeted by age group or interest in children's
+                coding
+              </p>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-connector">
+            <div class="flow-connector-inner">
+              <div class="fc-line"></div>
+              <span class="fc-chevron">▾</span>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-node">
+            <div class="flow-node-main">
+              <span class="flow-node-tag">Homepage hero</span>
+              <h4>Real teacher photo · Course overview · Age range</h4>
+              <p>
+                Warm, energetic design — reassuring for parents, engaging for
+                children
+              </p>
+            </div>
+            <div class="flow-node-exit">
+              <span class="flow-exit-tag">✕ Immediate exit</span>
+              <p>
+                Looks untrustworthy or irrelevant. Parent returns to search.
+              </p>
+            </div>
+          </div>
+
+          <div class="flow-connector">
+            <div class="flow-connector-inner">
+              <div class="fc-line"></div>
+              <span class="fc-chevron">▾</span>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-node">
+            <div class="flow-node-main">
+              <span class="flow-node-tag">Age-grouped courses</span>
+              <h4>9 to 12 · 13 to 16 — what they'll learn</h4>
+              <p>
+                Grouped by age so parents immediately see what's relevant for
+                their child
+              </p>
+            </div>
+            <div class="flow-node-exit">
+              <span class="flow-exit-tag">✕ Wrong fit</span>
+              <p>Age group or course format doesn't match. Parent leaves.</p>
+            </div>
+          </div>
+
+          <div class="flow-connector">
+            <div class="flow-connector-inner">
+              <div class="fc-line"></div>
+              <span class="fc-chevron">▾</span>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-node">
+            <div class="flow-node-main">
+              <span class="flow-node-tag">Trust signals</span>
+              <h4>Teacher profile · Advantages · Testimonials</h4>
+              <p>
+                Humanises the school — answers "who is actually teaching my
+                child?"
+              </p>
+            </div>
+            <div class="flow-node-exit">
+              <span class="flow-exit-tag">✕ Not convinced</span>
+              <p>Not enough trust built. Parent exits without signing up.</p>
+            </div>
+          </div>
+
+          <div class="flow-connector">
+            <div class="flow-connector-inner">
+              <div class="fc-line"></div>
+              <span class="fc-chevron">▾</span>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-node">
+            <div class="flow-node-main">
+              <span class="flow-node-tag">Free trial CTA</span>
+              <h4>Book a free lesson — repeated at every pause point</h4>
+              <p>
+                Low-commitment ask. Appears in hero, after courses, after trust
+                section
+              </p>
+            </div>
+            <div class="flow-node-exit">
+              <span class="flow-exit-tag">✕ CTA ignored</span>
+              <p>Not ready to commit yet. May return later.</p>
+            </div>
+          </div>
+
+          <div class="flow-connector">
+            <div class="flow-connector-inner">
+              <div class="fc-line"></div>
+              <span class="fc-chevron">▾</span>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="flow-node fn-success">
+            <div class="flow-node-main">
+              <h4>✓ Trial lesson booked</h4>
+              <p>Parent submits signup form · school follows up to confirm</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <hr class="cs-divider" />
+
+        <p id="cs-decisions" class="cs-section-label">Design decisions</p>
+        <p>
+          The design had to work hard on trust and energy simultaneously:
+          reassuring for parents, engaging for children, without splitting into
+          two separate experiences.
+        </p>
+
+        <div class="decision-block">
+          <span class="dec-num">01</span>
+          <div class="dec-content">
+            <h4>Real teacher photography in the hero</h4>
+            <p>
+              Stock photography reads as generic and untrustworthy. Using a real
+              photo of the teacher in the hero section immediately humanised the
+              school and answered the parent's first unspoken question: who is
+              actually teaching my child?
+            </p>
+          </div>
+        </div>
+
+        <div class="decision-block">
+          <span class="dec-num">02</span>
+          <div class="dec-content">
+            <h4>
+              Age-grouped course cards as the primary navigation structure
+            </h4>
+            <p>
+              Rather than listing all courses in a flat list, I grouped them by
+              age range (9 to 12, 13 to 16) so parents could immediately
+              identify what was relevant. Reducing irrelevant content is as
+              important as showcasing relevant content.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-study-image">
+          <img
+            src="../assets/images/edison-courses.png"
+            loading="lazy"
+            alt="Edison course cards grouped by age: 9 to 12 and 13 to 16"
+          />
+          <figcaption>
+            Age-grouped course cards: parents immediately see what's relevant
+            for their child without scanning a flat list
+          </figcaption>
+        </figure>
+
+        <div class="decision-block">
+          <span class="dec-num">03</span>
+          <div class="dec-content">
+            <h4>Free trial CTA repeated at every natural pause point</h4>
+            <p>
+              The call to action appeared in the hero, below the course cards,
+              after the trust section, and in the footer. Parents who were
+              persuaded at different points in the page could act immediately
+              without scrolling back up.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-study-image">
+          <img
+            src="../assets/images/edison-form.png"
+            loading="lazy"
+            alt="Edison free trial lesson signup form"
+          />
+          <figcaption>
+            Trial lesson signup form: low-commitment ask with a minimal number
+            of fields to reduce friction
+          </figcaption>
+        </figure>
+
+        <div class="decision-block">
+          <span class="dec-num">04</span>
+          <div class="dec-content">
+            <h4>Warm palette and friendly typography to lower anxiety</h4>
+            <p>
+              Yellow and purple accents created energy without aggression. The
+              overall tone was deliberately warm rather than corporate. Parents
+              choosing an extracurricular activity for their child respond
+              differently than B2B buyers.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-study-image">
+          <img
+            src="../assets/images/edison-cover.png"
+            loading="lazy"
+            alt="Edison homepage shown on a laptop mockup"
+          />
+          <figcaption>
+            Full homepage on desktop: real teacher photography, age-grouped
+            courses, repeated free trial CTA
+          </figcaption>
+        </figure>
+
+        <hr class="cs-divider" />
+
+        <p id="cs-build" class="cs-section-label">Build and launch</p>
+        <p>
+          Built using Tilda with custom code modifications to extend
+          functionality beyond the platform's defaults. Responsive across mobile
+          and desktop. Google Analytics configured from launch to track traffic
+          sources and conversion events. The site also included an integrated
+          online payment flow — parents could purchase a course directly on the
+          website and receive an automated receipt by email.
+        </p>
+        <div class="callout">
+          <p>
+            The site served as the landing destination for paid advertising
+            campaigns during the school's student recruitment periods.
+          </p>
+        </div>
+        <figure class="mobile-screens">
+          <div class="mobile-screens-row">
+            <img
+              src="../assets/images/edison-mobile.png"
+              loading="lazy"
+              alt="Edison mobile — hero and courses section"
+            />
+            <img
+              src="../assets/images/edison-mobile-2.png"
+              loading="lazy"
+              alt="Edison mobile — trust and advantages section"
+            />
+            <img
+              src="../assets/images/edison-mobile-3.png"
+              loading="lazy"
+              alt="Edison mobile — free trial signup form"
+            />
+          </div>
+          <figcaption>
+            Responsive mobile layout: stacked sections, touch-friendly CTAs.
+            Critical since paid ad traffic skews heavily mobile.
+          </figcaption>
+        </figure>
+
+        <hr class="cs-divider" />
+
+        <div id="cs-outcome" class="result-block">
+          <h3>Outcome</h3>
+          <div class="result-grid">
+            <div>
+              <span class="rg-val">9.6%</span>
+              <span class="rg-lab"
+                >Lead conversion rate across 8,100 sessions</span
+              >
+            </div>
+            <div>
+              <span class="rg-val">778</span>
+              <span class="rg-lab">Trial lesson leads generated</span>
+            </div>
+            <div>
+              <span class="rg-val">63%</span>
+              <span class="rg-lab">Mobile traffic share</span>
+            </div>
+          </div>
+          <p>
+            The site generated 778 trial lesson leads from 8,100 sessions at a
+            9.6% conversion rate — nearly double the EdTech industry average of
+            2–5%. Over 63% of traffic came from mobile, validating the
+            mobile-first approach taken during design.
+          </p>
+        </div>
+
+        <div class="reflection-block">
+          <h4>What I'd do differently</h4>
+          <p>
+            With access to the ad campaign data, I'd have A/B tested the hero
+            CTA copy and the course card layout: those are the highest-leverage
+            elements on a conversion page. I'd also have added a parent
+            testimonial section above the fold rather than lower down, since
+            social proof for a children's education service carries
+            disproportionate weight in the decision.
+          </p>
+        </div>
+      </div>
+
+      <div class="page-wrap">
+        <div class="section-header">
+          <span class="section-num">Next</span>
+          <h2>Other case studies</h2>
+        </div>
+        <div class="project-nav-grid">
+          <a class="project-nav-card" href="./cozymakeovers.html"
+            ><h3>CozyMakeovers</h3>
+            <p>Brand, UX and live website for a renovation business.</p></a
+          >
+          <a class="project-nav-card" href="./housedance.html"
+            ><h3>House Dancers</h3>
+            <p>
+              Dance school website: class schedules, bookings and a branded
+              merch shop.
+            </p></a
+          >
+          <a class="project-nav-card" href="./weather.html"
+            ><h3>Met Office weather app</h3>
+            <p>
+              A weather dashboard using the Met Office API. Complex data,
+              simplified.
+            </p></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>Dariia Paradzinska · Product and UI/UX Designer · London · 2026</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/dariia-paradzinska/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="../script.js"></script>
+    <script>
+      const dots = document.querySelectorAll(".cs-progress-dot");
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const target = document.getElementById(dot.dataset.target);
+          if (target)
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      const updateProgress = () => {
+        const scrollY = window.scrollY + window.innerHeight * 0.35;
+        let active = 0;
+        dots.forEach((dot, i) => {
+          const target = document.getElementById(dot.dataset.target);
+          if (
+            target &&
+            target.getBoundingClientRect().top + window.scrollY <= scrollY
+          ) {
+            active = i;
+          }
+        });
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === active));
+      };
+
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      updateProgress();
+    </script>
+  </body>
+</html>

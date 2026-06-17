@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study for a responsive weather forecast website using the Met Office API and designed for clarity.">
+  <title>Weather forecast website · Dariia Paradzinska</title>
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dariiaparadzinska.com/projects/weather.html">
+  <meta property="og:title" content="Weather forecast website · Dariia Paradzinska">
+  <meta property="og:description" content="Responsive, data-rich weather dashboard using the Met Office API. Designed for clarity and built end-to-end.">
+  <meta property="og:image" content="https://dariiaparadzinska.com/assets/images/weather-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Weather forecast website · Dariia Paradzinska">
+  <meta name="twitter:description" content="Responsive, data-rich weather dashboard using the Met Office API. Designed for clarity and built end-to-end.">
+  <meta name="twitter:image" content="https://dariiaparadzinska.com/assets/images/weather-cover.png">
+  <link rel="preload" href="../assets/fonts/DMSans-Variable.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="../assets/fonts/DMSerifDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <div class="nav-shell">
+    <nav>
+      <a href="../index.html" class="nav-name">Dariia Paradzinska</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a href="../assets/Dariia_Paradzinska_CV.pdf" class="nav-cv" download>CV ↓</a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu" aria-hidden="true">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="cs-hero">
+      <a class="cs-back" href="../index.html#work">← Back to work</a>
+      <div class="cs-tags">
+        <span class="cs-tag">Side project</span>
+        <span class="cs-tag">Dashboard design</span>
+        <span class="cs-tag">Responsive</span>
+        <span class="cs-tag">API integration</span>
+        <span class="cs-read-time">4 min read</span>
+      </div>
+      <h1>Met Office weather app: complex data, simplified</h1>
+      <p class="cs-subtitle">A responsive, location-based weather app using the Met Office API. The challenge was making complex meteorological data feel simple and trustworthy, without stripping away the detail people actually need.</p>
+      <div class="page-actions" style="margin-top: 1.5rem;">
+        <a href="https://weather-today.lovable.app/" class="btn btn-primary" target="_blank" rel="noreferrer">View live site ↗</a>
+      </div>
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <span class="cs-metric-val">Responsive</span>
+        <span class="cs-metric-lab">Mobile and desktop, seamlessly adapted</span>
+      </div>
+      <div class="cs-metric">
+        <span class="cs-metric-val">Live data</span>
+        <span class="cs-metric-lab">Met Office API integration</span>
+      </div>
+      <div class="cs-metric">
+        <span class="cs-metric-val">End-to-end</span>
+        <span class="cs-metric-lab">Designed and built independently</span>
+      </div>
+    </div>
+
+    <div class="cs-progress">
+      <div class="cs-progress-dot active" data-target="cs-challenge" data-label="The challenge"></div>
+      <div class="cs-progress-dot" data-target="cs-users" data-label="User"></div>
+      <div class="cs-progress-dot" data-target="cs-decisions" data-label="Design decisions"></div>
+      <div class="cs-progress-dot" data-target="cs-build" data-label="Build & API"></div>
+      <div class="cs-progress-dot" data-target="cs-outcome" data-label="Outcome"></div>
+    </div>
+
+    <div class="cs-body">
+
+      <p id="cs-challenge" class="cs-section-label">The challenge</p>
+      <p>Weather apps are everywhere, but most fall into one of two failure modes: they overwhelm users with data they don't need right now, or they strip things back so far that you have to hunt for anything useful. I wanted to explore the middle ground.</p>
+      <div class="callout">
+        <p>The design goal: give people the one or two things they actually need at a glance, while keeping detailed data one step away. Not hidden, not in the way.</p>
+      </div>
+      <p>This was also my first time working directly with an external API (the Met Office data feed), which added technical constraints that shaped several design decisions: a 360 requests/day rate limit, variable data structures, and the need for graceful fallbacks when values were missing.</p>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/weather-hero.png" alt="Weather forecast app showing current conditions and hourly forecast" loading="lazy">
+        <figcaption>Main dashboard: current conditions, feels-like temperature, and hourly strip, all visible without scrolling</figcaption>
+      </figure>
+
+      <hr class="cs-divider">
+
+      <p class="cs-section-label">My role</p>
+      <div class="cs-two-col">
+        <div class="cs-mini">
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>UX and UI design: wireframes to high-fidelity</li>
+            <li>Information architecture and data hierarchy</li>
+            <li>Responsive layout across mobile and desktop</li>
+            <li>Build and launch using Lovable</li>
+            <li>API integration, caching strategy, error states</li>
+            <li>Post-launch debugging and iteration</li>
+          </ul>
+        </div>
+        <div class="cs-mini">
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma: design and prototyping</li>
+            <li>FigJam: UX flows and information architecture</li>
+            <li>Lovable: no-code build and deployment</li>
+            <li>Met Office API: live weather data</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="cs-divider">
+
+      <p id="cs-users" class="cs-section-label">User and goals</p>
+      <h2>Who uses a weather app, and what do they actually need?</h2>
+      <p>The primary user is a busy person who needs quick, reliable weather information to plan their day, not to explore data for its own sake. They switch between locations and expect accuracy and speed.</p>
+
+      <div class="callout">
+        <p>"I need to know if I should bring an umbrella and what the temperature will be when I leave work — without wading through pages of irrelevant data."</p>
+      </div>
+
+      <div class="cs-two-col">
+        <div class="cs-mini">
+          <h4>User goals</h4>
+          <ul>
+            <li>Know immediately if I need a coat or an umbrella</li>
+            <li>Scan the next few hours without decoding icons</li>
+            <li>Check the week ahead without switching screens</li>
+            <li>Save and switch between multiple locations quickly</li>
+            <li>Have it work as well on my phone as on desktop</li>
+          </ul>
+        </div>
+        <div class="cs-mini">
+          <h4>Design goals</h4>
+          <ul>
+            <li>Clear information hierarchy: most important data first</li>
+            <li>Reduce cognitive load through visual grouping</li>
+            <li>Dashboard-style layout that scales across breakpoints</li>
+            <li>Dynamic backgrounds that reflect real conditions</li>
+            <li>Location persistence across sessions</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="cs-divider">
+
+      <p id="cs-decisions" class="cs-section-label">Design decisions</p>
+      <p>Working with live API data added constraints most design exercises avoid: the layout had to accommodate variable data lengths, missing values, and different location responses gracefully.</p>
+
+      <div class="decision-block">
+        <span class="dec-num">01</span>
+        <div class="dec-content">
+          <h4>Current conditions as the hero, always</h4>
+          <p>Temperature, feels-like, and a plain-language condition description sit above everything else. No icons to decode, no scrolling to find the basics. The number you need is the first thing you see.</p>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <span class="dec-num">02</span>
+        <div class="dec-content">
+          <h4>Hourly and daily views as layers, not tabs</h4>
+          <p>Rather than hiding detail behind navigation, the hourly forecast lives directly below the current conditions, and the weekly view below that. Each layer answers a different question without requiring the user to make a choice first.</p>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <span class="dec-num">03</span>
+        <div class="dec-content">
+          <h4>Location selector at the top, always visible</h4>
+          <p>The location label doubles as the selector, positioned prominently at the top of every view. Users can switch locations with a single tap without navigating away or scrolling. It also persists across sessions: returning users see their last location immediately.</p>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <span class="dec-num">04</span>
+        <div class="dec-content">
+          <h4>Dynamic backgrounds based on weather conditions</h4>
+          <p>The background adapts to current conditions (overcast, sunny, rainy), giving users an immediate visual sense of the weather before reading a single number. This also reduces reliance on iconography, which often reads differently across contexts.</p>
+        </div>
+      </div>
+
+      <div class="decision-block">
+        <span class="dec-num">05</span>
+        <div class="dec-content">
+          <h4>Responsive layout driven by data priority, not just reflow</h4>
+          <p>On mobile, the hourly strip collapses to a horizontal scroll. On desktop, it expands into a full dashboard panel. The same data, reorganised by what fits and what matters most at each screen size, not just reflowed.</p>
+        </div>
+      </div>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/weather-cover.png" alt="Weather forecast website shown on a laptop mockup" loading="lazy">
+        <figcaption>Desktop layout: current conditions, hourly strip and extended forecast visible in one view</figcaption>
+      </figure>
+
+      <figure class="mobile-screens">
+        <div class="mobile-screens-row">
+          <img src="../assets/images/weather-screen-1.png" alt="Weather app mobile view showing current weather and hourly forecast" loading="lazy">
+          <img src="../assets/images/weather-screen-2.png" alt="Weather app showing dynamic background and location selector" loading="lazy">
+        </div>
+        <figcaption>Mobile views: current conditions with hourly strip, and the location selector overlay</figcaption>
+      </figure>
+
+      <hr class="cs-divider">
+
+      <p id="cs-build" class="cs-section-label">Build, API and iteration</p>
+      <p>Integrating the Met Office API was new territory for me. It meant understanding data structures I hadn't designed, handling edge cases where values were missing or formatted unexpectedly, and making design decisions based on what the data could actually deliver rather than what I'd assumed.</p>
+
+      <div class="callout">
+        <p>Designing around real data taught me more about defensive design than any brief could. When the API returns nothing, the interface still has to make sense.</p>
+      </div>
+
+      <p>The API has a 360 requests/day limit, which required a smart caching strategy: responses are cached per location for one hour, reducing API calls significantly while keeping data fresh enough to be useful.</p>
+
+      <figure class="case-study-image">
+        <img src="../assets/images/weather-diagram.png" alt="Data architecture diagram showing API caching and location logic" loading="lazy">
+        <figcaption>Data and caching architecture: hourly cache per location reduces API calls while maintaining freshness</figcaption>
+      </figure>
+
+      <p>I designed fallback states for loading, empty responses, and location permission denial, turning what could have been error screens into clear, helpful moments that kept users oriented.</p>
+
+      <div class="decision-block">
+        <span class="dec-num">↺</span>
+        <div class="dec-content">
+          <h4>Post-launch: gradient overlay blocking taps on mobile</h4>
+          <p>After launch, a visual enhancement (a subtle gradient overlay to improve text readability on dynamic backgrounds) was inadvertently blocking click events on the location selector on certain mobile devices. The fix was adjusting the CSS <code>pointer-events</code> property on the overlay layer so interactive elements remained fully clickable without losing the visual improvement. User testing confirmed the fix worked across all target devices.</p>
+        </div>
+      </div>
+
+      <hr class="cs-divider">
+
+      <div id="cs-outcome" class="result-block">
+        <h3>Outcome</h3>
+        <div class="result-grid">
+          <div>
+            <span class="rg-val">45%</span>
+            <span class="rg-lab">Of sessions on mobile</span>
+          </div>
+          <div>
+            <span class="rg-val">1-hour</span>
+            <span class="rg-lab">Cache per location — Met Office rate limit handled</span>
+          </div>
+          <div>
+            <span class="rg-val">3</span>
+            <span class="rg-lab">Error states designed: loading, empty, location denied</span>
+          </div>
+        </div>
+        <p>The project delivered a live, location-aware weather product, designed and built independently. The caching strategy solved a real technical constraint without degrading the user experience. The post-launch iteration demonstrated the full cycle (design, ship, discover, fix), which is often more instructive than a project that launches perfectly.</p>
+      </div>
+
+      <div class="reflection-block">
+        <h4>What I'd do differently</h4>
+        <p>I'd run structured usability tests around the hourly to daily forecast transition: that handoff is where users most often lose their sense of what timeframe they're looking at. I'd also instrument scroll depth from the start to understand whether the weekly forecast is actually being used, or whether the above-the-fold design answers most questions before people get there. And I'd have caught the gradient overlay issue in mobile testing before launch, not after.</p>
+      </div>
+
+    </div>
+
+    <div class="page-wrap">
+      <div class="section-header">
+        <span class="section-num">Next</span>
+        <h2>Other case studies</h2>
+      </div>
+      <div class="project-nav-grid">
+        <a class="project-nav-card" href="./cozymakeovers.html"><h3>CozyMakeovers</h3><p>Brand, UX and live website for a renovation business.</p></a>
+        <a class="project-nav-card" href="./edison.html"><h3>Edison IT school</h3><p>Conversion-focused EdTech website designed for parent signups.</p></a>
+        <a class="project-nav-card" href="./housedance.html"><h3>House Dancers</h3><p>Dance school website: class schedules, bookings and a branded merch shop.</p></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Dariia Paradzinska · Product and UI/UX Designer · London · 2026</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/dariia-paradzinska/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="../assets/Dariia_Paradzinska_CV.pdf" download>CV ↓</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../script.js"></script>
+  <script>
+    const dots = document.querySelectorAll('.cs-progress-dot');
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const target = document.getElementById(dot.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const updateProgress = () => {
+      const scrollY = window.scrollY + window.innerHeight * 0.35;
+      let active = 0;
+      dots.forEach((dot, i) => {
+        const target = document.getElementById(dot.dataset.target);
+        if (target && target.getBoundingClientRect().top + window.scrollY <= scrollY) {
+          active = i;
+        }
+      });
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === active));
+    };
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>
