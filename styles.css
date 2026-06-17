@@ -2292,6 +2292,7 @@ footer a {
   .cs-metric {
     border-right: none;
     border-bottom: 1px solid var(--paper-3);
+    padding-left: 0;
   }
   .cs-metric:last-child {
     border-bottom: none;
